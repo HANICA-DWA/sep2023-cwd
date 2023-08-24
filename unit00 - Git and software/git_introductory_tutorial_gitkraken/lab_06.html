@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 6 - DWA Git Immersion </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="screen.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body data-lab-id="6">
+<header id="header">
+    <nav id="pager">
+        <a id="arrow_next" class="arrow" href="lab_07.html">Next</a>
+
+        <a id="arrow_previous" class="arrow" href="lab_05.html">Previous</a>
+    </nav>
+
+    <h1 class="lab_title"><em>lab 6</em>Changes and Diffs</h1>
+</header>
+
+<div id="main_content">
+    <h1 class="lab_title"><em>lab 6</em>Changes and Diffs</h1>
+
+    <h3>Goals</h3>
+    <ul>
+        <li>Learn how to inspect changes to files.</li>
+    </ul>
+
+    <h2>Change the &#8220;Hello, World&#8221; program. <em>01</em></h2>
+
+    <p>
+        It&#8217;s time to change our hello program to take
+        an argument from the command line. Change the file to be:
+    </p>
+    <h4>File: <em>hello.js</em></h4>
+    <pre class="file">
+    // use from command-line:  node hello.js "Bugs Bunny"
+    // prints "hello Bugs Bunny!"
+    'use strict';
+    console.log('Hello, ' + process.argv[2] + '!');
+    </pre>
+    <p>There are three kinds of changes in this one little file:</p>
+    <ol>
+      <li>Two lines were <i>added</i>: The comment lines at the top.</li>
+      <li>One line <i>stayed the same</i>: The "use strict" line.</li>
+      <li>One line was changed: the "console.log" line.</li>
+    </ol>
+
+
+    <h2>Check the status in GitKraken <em>02</em></h2>
+    <p>
+      Switch to GitKraken and notice that it sees the change, by mentioning "hello.js" in the "Unstaged Files". You may need to select the WIP-line in the middle column to see the "Unstaged Files" box.
+    </p>
+    <p>
+      DO NOT COMMIT the changes yet!
+    </p>
+
+    <h2>Check the status in GitKraken <em>02</em></h2>
+    <p>Click on the name of hello.js in the "Unstaged Files" box.</p>
+    <p>The middle column with the commit history becomes very small, to make room for a new panel that shows how the file has changed:</p>
+    <img src="_img/gk23.png" style="width:800px;" alt="" />
+    <p>Green lines are lines that were added between the last commit and now.</p>
+    <p>Red lines are, of course, lines that were deleted.</p>
+    <p>Notice that a changed line is shown as a combination of a delete and an addition. This is usual for source code control systems, and Git is no exception.</p>
+
+    <h2>See the same changes on Github <em>03</em></h2>
+    <p>Bring the changes to Github:</p>
+    <ol>
+      <li>Commit the changes to the local repo.</li>
+      <li>Push the commit to Github.</li>
+      <li>Reload the repo-page on Github in your browser.</li>
+    </ol>
+    <p>Notice that, on the Github page, the commit message next to 'hello.js' has been updated.</p>
+    <p>Now, click on <i>the commit message</i> next to 'hello.js' (i.e. not the file name!). Github shows the changes in a similar way.</p>
+    <img src="_img/gk24.png" style="width:800px;" alt="" />
+    <p>Such a way of displaying the changes to a file, by highlighting the lines that were added or deleted, is called a 'diff'.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 2 - DWA Git Immersion </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="screen.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+<body data-lab-id="2">
+<header id="header">
+    <nav id="pager">
+        <a id="arrow_next" class="arrow" href="lab_03.html">Next</a>
+
+        <a id="arrow_previous" class="arrow" href="lab_01.html">Previous</a>
+    </nav>
+
+    <h1 class="lab_title"><em>lab 2</em> Changing and committing a file</h1>
+</header>
+
+<div id="main_content">
+    <h1 class="lab_title"><em>lab 2</em>  Changing and committing a file</h1>
+    <h3>Goals</h3>
+    <ul>
+      <li>- Learn how to check the status of the repository</li>
+      <li>- See how GitKraken shows you tha a file has changed.</li>
+    </ul>
+    <h2><em>01</em>See what an unchanged repo looks like </h2>
+    <p>Look at the main screen for your repo. It should look like this:</p>
+    <img src="_img/gk11.png" style="width:800px;" alt="" />
+    <p>This is Gt Kraken showing (in the middle column) that there is one <i>commit</i> called "Initial commit", and that there are no files that have been changed, added or deleted (in the right column).
+    <h4>Note: If things look different</h4>
+    <p>If you've already looked at the contents of the directory, your OS may have added some files. In that case (or if you've been changing other things in the repo), your GitKraken main screen may look a bit like this: <br><i>(notice the two buttons on the right, and the "WIP" line at the top of the middle column).</i></p>
+    <img src="_img/gk12.png" style="width:800px;" alt="" />
+    <p>In my case, OS X has added a file called ".DS_Store" (invisible in the finder, but visible to GitKraken). Windows does similar things. Sometimes, for example, it adds a file called "Thumbs.db".</p>
+    <p>If your repo, at this point in the tutorial, is not "clean", please use the red "Discard all Changes" button to revert your local repo to the "clean" state.</p>
+
+
+    <h2><em>02</em>Changing a file </h2>
+    <p>Use your text editor to add a line to the file called "README.md" &mdash; something like this:</p>
+    <img src="_img/gk13.png" style="width:500px;" alt="" />
+    <p>Now save, and switch back to GitKraken, and notice that Gitkraken has seen the change:</p>
+    <img src="_img/gk14.png" style="width:800px;" alt="" />
+    <p>The file that has been changed is listed in the box on the right called "Unstaged Files". You also get the option to "Discard all changes" (this reverts the entire repo to the last commit, which in our situation is the version we got from GitHub.). Another button allows you to "Stage" files. Staging in Git means marking them as part of the next commit. We'll do that in a few steps.
+
+    <h4>Another note about the OS adding files</h4>
+    <p>Your OS may have added an extra file (like ".DS-Store" or "Thumbs.db") <i>again</i>. You can ignore this annoying behaviour for now.</p>
+    <p>You can also ask GitKraken to ignore file like this, by adding their name to the file called ".gitignore" (each filename at the start of a new line).
+
+
+    <h2> <em>02</em>Making history: committing the file</h2>
+    <p>Notice how GitKraken shows the top line in the middle column a bit grayed-out? The abbreviation "WIP" stands for Work-In-Progress. That represents the state of your local directory. These changes are not (yet) part of Git's database of all the versions of your code. First we need to create such a 'version', by creating a 'commit'.</p>
+    <p>On the bottom-right of the GitKraken window is a large green button that will create a commit. It is disabled for now because you can only commit if:<p>
+      <ul>
+        <li>- there are "staged" changes, and</li>
+        <li>- there is some text in the commit-message</li>
+      </ul>
+
+    <h4>Step A: Staging</h4>
+    <p>Move, with your mouse, over the "README.md" line in the box "Ustaged Files". You should see a small green button appear, allowing you to stage that particular file. Proceed, and stage this file. It moves to the box below.</p>
+    <img src="_img/gk15.png" style="width:800px;" alt="" />
+    <p>Usually, you want to stage all changes for a single commit. Advanced Git users, however, want to be able to split a set of changes into several commits. That's why Git wants you to stage files: you can select which change go into this commit, and which ones into the next commit.</p>
+
+    <h4>Step B: Adding a message</h4>
+    <p>Fill out the Summary fields in the box below "Commit Message".</p>
+    <p>The Commit button should become enabled:</p>
+    <img src="_img/gk16.png" style="width:800px;" alt="" />
+
+    <h4>Step C: Commit!</h4>
+    <p>Press the button to see a new commit in the middle column:</p>
+    <img src="_img/gk17.png" style="width:800px;" alt="" />
+    <p>Notice that the boxes on the right are empty again: now, there aren't any differences between the files in your working directory, and the files in the latest commit anymore.</p>
+    <p>Also, the "WIP"-line in the middle column has changed: It is no longer grayed-out, and it shows the summary of your commit message (instead of "WIP"). The WIP-line only appears if there are differences between your working directory and the lastst commit.
+</div>
+
+</body>
+</html>

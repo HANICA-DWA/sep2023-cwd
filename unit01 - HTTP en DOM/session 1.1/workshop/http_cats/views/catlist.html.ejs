@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <title>HTTP Catz</title>
+   </head>
+   <body>
+      <h1><img src="/logo.png" height="100"> HTTP Catz</h1>
+      <hr>
+      <% if(catz.length == 0) {
+         %><h1>There are no catz...</h1><p>Use a POST request to add one...</p><%
+      } else if(catz.length == 0) {
+         %><h1>There is one cat!</h1><p>Use a POST request to add more, or a DELETE method to remove this one...</p><%
+      } else {
+         %><h1>There are <%=catz.length %> catz!</h1><p>click an image to enlarge...</p><%
+      }
+      catz.forEach(function(theCat){ %>
+         <p>
+            <i><%= theCat.submitter %></i> submitted:<br>
+            <a href="/catz/<%= theCat._id %>"><img height="160px" src="<%= theCat.imageURL %>"></a>
+         </p>
+         <hr>
+      <% }) %>
+   </body>
+</html>
+
+total 24
+-rw-rw-r-- 1 developer developer   197 aug 26 14:05 index.html
+-rw-rw-r-- 1 developer developer 18231 aug 27 06:10 logo.png

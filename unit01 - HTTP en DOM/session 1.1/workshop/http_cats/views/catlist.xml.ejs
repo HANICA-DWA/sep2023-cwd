@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<catz><% catz.forEach( function(theCat){ %>
+   <cat id="<%= theCat._id %>" submitter="<%= theCat.submitter %>" upvotes="<%= theCat.upVotes %>">
+      <%= theCat.imageURL %>
+   </cat><% }) %>
+</catz>

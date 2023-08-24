@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 4 - DWA Git Immersion </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="screen.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body data-lab-id="4">
+<header id="header">
+    <nav id="pager">
+        <a id="arrow_next" class="arrow" href="lab_05.html">Next</a>
+
+        <a id="arrow_previous" class="arrow" href="lab_03.html">Previous</a>
+    </nav>
+
+    <h1 class="lab_title"><em>lab 4</em> Inspecting History</h1>
+</header>
+
+<div id="main_content">
+    <h1 class="lab_title"><em>lab 4</em> Inspecting History</h1>
+
+    <h3>Goals</h3>
+    <ul>
+        <li>Learn how to inspect the history of the repository</li>
+    </ul>
+
+
+    <h2>Inspect the history of the repository <em>01</em></h2>
+    <p>
+      The middle column shows the list of commits that make up the history of the project. In the previous step, we left the repo like this:
+    </p>
+    <img src="_img/gk19.png" style="width:800px;" alt="" />
+    <p>Notice how there are two labels (leftmost in the middle column) with the text "master". </p>
+    <p>The name "master" is the name of the curent "branch" you're working on. Often, especially when working in teams, it is useful to separate changes from different people (or belonging to different features the team is working on) into separate sets of commits. Such a set is called a "branch", and "master" is the default name that Git uses for the first branch in the repo.</p>
+    <p>The top label has an icon referring to your local computer. The lower one has an icon referring to Github. This tells you that the repo on Github is two commits "behind" your local system. When you commit changes, all that happens is that the versions-database of your local repository changes. Github is left alone until you "push" the changes to Github (see the next page).</p>
+    <h4>Take a look:</h4>
+    <p>Visit your repo on the Github.com site.</p>
+    <p>Notice that README.md does not yet have the newly added line of text.</p>
+    <p>Notice that hello.js does not even exist</p>
+    <p>Notice that Github only mentions the existence of 1 commit</p>
+</div>
+
+</body>
+</html>

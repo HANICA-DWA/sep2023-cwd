@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 5 - DWA Git Immersion </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="screen.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body data-lab-id="5">
+<header id="header">
+    <nav id="pager">
+        <a id="arrow_next" class="arrow" href="lab_06.html">Next</a>
+
+        <a id="arrow_previous" class="arrow" href="lab_04.html">Previous</a>
+
+    </nav>
+
+    <h1 class="lab_title"><em>lab 5</em> Pushing </h1>
+
+</header>
+
+<div id="main_content">
+    <h1 class="lab_title"><em>lab 5</em> Pushing </h1>
+
+    <h3>Goals</h3>
+    <ul>
+        <li>Learn how to push local changes to the remote repo</li>
+    </ul>
+
+
+    <h2><em>01</em>Push changes to your remote repo. </h2>
+    <p>
+        To update the remote repo with your local changes, you'll
+        need to execute a push. This will apply all local commits since
+        the last push to the remote repo, so you can apply
+        multiple commits with one push.
+    </p>
+    <h4>But First:</h4>
+    <p>Make sure your repo is clean: There should be no uncomitted changes in either the "Unstaged Files" box or the "Staged Files" box. No "WIP" line either.</p>
+    <p>If you have uncommited changes, either commit them, or delete them by unstaging all staged files, and then discarding all changes.</p>
+    <h4>Now, PUSH!</h4>
+    <p>In the top row of the GitKraken screen, there's a button called "Push" (highlighted in the screenshot below):</p>
+    <img src="_img/gk20.png" style="width:800px;" alt="" />
+    <p>A simple press on "Push" should send the new commits to Github. Go ahead.</p>
+    <p>After a notification that the push was succesful, only a subtle change in the GitKraken screen shows the effect of the push:</p>
+    <img src="_img/gk21.png" style="width:800px;" alt="" />
+    <p>The two "master"-labels have merged into one. This one contains both the "local repo" icon and the "github" icon. The "remote" repo on Github is no longer two commits behind.</p>
+    <h4>Check it out</h4>
+    <p>Reload your repo-page on the Github.com site.</p>
+    <p>Notice that README.md <i>does</i> have the newly added line of text.</p>
+    <p>Notice that hello.js exists, and has the right content.</p>
+    <p>Notice that Github mentions the existence of 3 commits</p>
+    <p>For both README.md and hello.js, Github shows the name of the last commit that affected the file next to the filename.</p>
+    <img src="_img/gk22.png" style="width:800px;" alt="" />
+
+
+
+</div>
+
+</body>
+</html>

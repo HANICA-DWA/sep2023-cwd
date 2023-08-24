@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 8 - DWA Git Immersion </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="screen.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body data-lab-id="7">
+<header id="header">
+    <nav id="pager">
+        <a id="arrow_next" class="arrow" href="lab_08.html">Next</a>
+
+        <a id="arrow_previous" class="arrow" href="lab_06.html">Previous</a>
+    </nav>
+
+    <h1 class="lab_title"><em>lab 7</em> Reverting local changes</h1>
+</header>
+
+<div id="main_content">
+    <h1 class="lab_title"><em>lab 7</em> Committing Changes</h1>
+
+    <h3>Goals</h3>
+    <ul>
+        <li>
+            Learn how to undo changes to the working directory by
+            reverting to the last commit.
+        </li>
+    </ul>
+
+    <p>GitKraken has "Undo" and "Redo" buttons. You can use the Undo button to undo, for example, the last commit. In this tutorial we're not going to do that, however: Undo is a feature specific to GitKraken. Most other Git tools don't have an Undo option. Instead, the process of discarding the changes in a commit in "normal" Git (and other tools) is called "reverting the commit".</p>
+    <p>It is more useful to gain experience in regular reverts than in GitKraken-specific tricks. Luckily, GitKraken does support reverting commits.</p>
+
+    <h2>Revert the local change <em>01</em></h2>
+    <p>
+        You can discard all changes to the file(s) in your
+        working directory by reverting to your last commit.
+    </p>
+    <h4>But First:</h4>
+    <p>Make sure the middle column of GitKraken is showing the commit history. If it is obscured by the panel showing changes in a source code file, close that panel first.</p>
+    <p>Also, make sure your repo is clean: There should be no uncomitted changes in either the "Unstaged Files" box or the "Stages Files" box. No "WIP" line either.</p>
+    <h4>Revert the last commit:</h4>
+    <p>Perform a right-mouse-click on the very last commit (the one where you added functionality to hello.js). You should see a menu appear:</p>
+    <img src="_img/gk25.png" style="width:800px;" alt="" />
+    <p>Select "revert commit".<br>Two things happen (one visible, one invisible):</p>
+    <ol><li>The files in your working directory are "changed back": They now reflect how things were at the last-but-one commit (which is the state you're reverting to).</li>
+        <li>GitKraken asks you if you want to store this reversal into a new commit.<br>
+            <img src="_img/gk26.png" style="width:800px;" alt="" /><br>
+            This is important to understand: reverting a commit does not delete the commit you're reverting. It simply changes the files back to a previous state, and if those reversals are what you want to keep, you can commit them in <i>a new commit</i>. The old one is not thrown away, but kept as part of the history of the project.</li>
+    </ol>
+    <p>Answer <b>"No"</b> to the question about committing the reverted changes.</p>
+
+    <h2>Inspect the effect of the revert.<em>02</em></h2>
+    <p>A new "WIP" line has appeared in the commit history. Apparently, the revert has caused changes to your file(s).</p>
+    <p>Look at the diff for 'hello.js'. Notice that the pattern of red and green lines is extacly the reverse of the diff you saw in the previous 'lab':</p>
+    <img src="_img/gk27.png" style="width:800px;" alt="" />
+    <h4>Commit the reverted repo</h4>
+    <p>And push it to Github.</p>
+</div>
+</body>
+</html>

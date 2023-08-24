@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 8 - DWA Git Immersion </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="screen.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body data-lab-id="8">
+
+<header id="header">
+    <nav id="pager">
+        <a id="arrow_previous" class="arrow" href="lab_07.html">Previous</a>
+    </nav>
+
+    <h1 class="lab_title"><em>lab 8</em> Visiting commits on Github.</h1>
+
+</header>
+
+<div id="main_content">
+    <h1 class="lab_title"><em>lab 8</em> Stage, commit and push</h1>
+
+    <h3>Goals</h3>
+    <ul>
+        <li>Get the Github URL for a specific commit.</li>
+        <li>Look at the way files have been in previous commits.</li>
+    </ul>
+
+    <h2>Prepare<em>01</em></h2>
+    <p>Make sure you've completed the steps in the previous lab.</p>
+
+
+    <h2>Navigate to the latest commit on Github<em>02</em></h2>
+    <p>The main page for your repo on github should look like this:</p>
+    <img src="_img/gk28.png" style="width:800px;" alt="" />
+    <p>Notice the commit message for hello.js. It shows that the revert was committed and pushed.</p>
+    <p>If you click on the commit message, Github shows you the <i>page for the commit</i>:</p>
+    <img src="_img/gk33.png" style="width:800px;" alt="" />
+    <p>You saw a <i>commit-page</i> when inspecting the changes to hello.js on Github. Right now, only changes in a single file are shown, but if a commit involved many files, its commit-page would show the changes to all those files.</p>
+    <p>You can use the URL for such a commit-page to share info about the commit with team members or teachers.</p>
+
+    <h2>Navigate to an older commit on Github<em>03</em></h2>
+    <p>You can also navigate to a specific commit in Github using the list of all commits. In the main page for your repo, click on the link (above the file list) called "5 commits". It takes you to this page:</p>
+    <img src="_img/gk29.png" style="width:800px;" alt="" />
+    <p>Clicking on any of the commit-names takes you to a page for that specific commit, showing you all changes in that commit.</p>
+    <h4>Getting info from an old commit</h4>
+    <p>Navigate to the commit-page for the commit containing the anhanced version of hello.js. You know, the code that is no longer in your working directory because you reverted the change.</p>
+    <p>Sometimes you're not interested in the changes, but in the bare contents of a file at a specific commit. For exmple, we'd like to see what hello.js looked like before we reverted the commit.</p>
+    <p>Look for the button "Browse Files" next to the title of the commit on the commit-page.</p>
+    <img src="_img/gk30.png" style="width:800px;" alt="" />
+    <p>Click it. Look carefully at the resulting page:</p>
+    <img src="_img/gk31.png" style="width:800px;" alt="" />
+    <p>You've made Github travel back in time! It shows you what the repo looked like at that commit. Notice that the commit message next to hello.js no longer mentions any reverting of changes.</p>
+    <p>Now you can look at 'hello.js' by clicking on its title</p>
+    <img src="_img/gk32.png" style="width:800px;" alt="" />
+    <p>See?! You're looking at the code for the enhanced version of hello.js, even though you told GitKraken to revert those changes.</p>
+    <p>Git remembers everything.</p>
+    <p>
+    <h4>Done</h4>
+    <p>You now know enough to use GitKraken for DWA.</p>
+</div>
+</body>
+</html>

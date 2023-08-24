@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 3 - DWA Git Immersion </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="screen.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body data-lab-id="3">
+<header id="header">
+    <nav id="pager">
+        <a id="arrow_next" class="arrow" href="lab_04.html">Next</a>
+
+        <a id="arrow_previous" class="arrow" href="lab_02.html">Previous</a>
+    </nav>
+
+    <h1 class="lab_title"><em>lab 3</em> Add a New File</h1>
+</header>
+
+<div id="main_content">
+    <h1 class="lab_title"><em>lab 3</em> Add a New File</h1>
+
+    <h3>Goals</h3>
+    <ul>
+        <li>Learn how to add a new file to your local repo.</li>
+    </ul>
+    <h2>Create a &#8220;Hello, World&#8221; script <em>01</em></h2>
+
+    <p>
+        In the swd-directory create a new JavaScript file called
+        hello.js, but DON'T add it to the local repo just
+        yet.
+    </p>
+    <h4>Execute:</h4>
+    <p>
+        Create a new JavaScript File:
+    </p>
+    <img src="webstorm_img/lab03/lab03_1.PNG" alt="" />
+    <p>
+        Use the name "hello". Because you've selected JavaScript
+        file the extension, WebStorm will add the .js extension.
+    </p>
+    <img src="webstorm_img/lab03/lab03_2.PNG" alt="" />
+    <p>
+        Choose No, to prevent WebStorm from adding it to
+        your local repo.
+    </p>
+    <img src="webstorm_img/lab03/lab03_3.PNG" alt="" />
+    <h4>File: <em>hello.js</em></h4>
+<pre class="file">'use strict';
+console.log('Hello, World');
+</pre>
+    <h4>Output: </h4>
+    <p>
+        You should see:
+    </p>
+    <img src="webstorm_img/lab03/lab03_4.PNG" alt="" />
+
+    <h2>Try to commit the script <em>02</em></h2>
+    <p>
+        If you try to commit your changes nothing will happen,
+        because git doesn't consider your file to be part of
+        your local repo.
+    </p>
+    <h4>Execute:</h4>
+    <p>
+        Right Click on the file in the Version Control window
+        and select "Commit Changes".
+    </p>
+    <img src="webstorm_img/lab03/lab03_5.PNG" alt="" />
+    <h4>Output:</h4>
+    <img src="webstorm_img/lab03/lab03_6.PNG" alt="" />
+    <h2>Add the script to the local repo <em>03</em></h2>
+    <p>
+        You'll first need to add the script to the local repo.
+        This instructs git to place it on the "staging area"
+    </p>
+    <h4>Execute:</h4>
+    <p>
+        Right Click on the file in the Version Control window
+        and select "Add to VCS".
+    </p>
+    <img src="webstorm_img/lab03/lab03_7.PNG" alt="" />
+    <h4>Output:</h4>
+    <p>
+        You should see:
+    </p>
+    <img src="webstorm_img/lab03/lab03_8.PNG" alt="" />
+    <h2>Commit the script to your local repo <em>04</em></h2>
+    <p>
+        Now you should be able to commit the script. Git will
+        move the script from the staging area to a new
+        snapshot of your project.
+    </p>
+    <h4>Execute:</h4>
+    <p>
+        Right Click on the file in the Version Control window
+        and select "Commit Changes".
+    </p>
+    <img src="webstorm_img/lab03/lab03_9.PNG" alt="" />
+    <p>
+        Add a comment and uncheck all checkboxes. Press commit and
+        select the first option: "commit".
+    </p>
+    <img src="webstorm_img/lab03/lab03_10.PNG" alt="" />
+    <h4>Output:</h4>
+    <p>
+        You should see:
+    </p>
+    <img src="webstorm_img/lab03/lab03_11.PNG" alt="" />
+
+
+</div>
+</body>
+</html>
