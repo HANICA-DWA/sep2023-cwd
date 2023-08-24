@@ -13,8 +13,7 @@
    - _Windows users:_ Install the command-line [Git](https://git-scm.com/) tool. Most of you won't be using it directly, but it is sometimes handy for some troubleshooting. (MacOS users: you already have a workable Git installed as part of MacOS).
 1. _Editor:_ There are many tools available to edit source-code. The following options are the ones that you teachers have experience with. With other editors, wthey may not be able to help you if there are problems.
    - If you like Integrated Development Environments (IDE's), we recommend [Webstorm](https://www.jetbrains.com/webstorm/). Use [this page](https://www.jetbrains.com/student/) to apply for a free student license.
-   - If you prefer using a programmer's editor there are two popular options:
-     - [Microsoft's Visual Studio Code](https://code.visualstudio.com/). A number of the teachers use this as well.
+   - If you prefer using a programmer's editor, we recommend [Microsoft's Visual Studio Code](https://code.visualstudio.com/). The teachers use this as well.
 1. _Git tool_: Install **[Github Desktop](https://desktop.github.com)**, unless you want to use the command-line Git, or the built-in Git facilities in WebStorm VSCode.
 
 ### Git Introductory Tutorial
