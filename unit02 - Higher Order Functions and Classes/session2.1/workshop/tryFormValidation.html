@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HOF form validator</title>
+    <style>
+      body {
+        background-color: #ddd;
+      }
+      #error-report {
+        background-color: #fee;
+        color: #800;
+        border: 1px solid red;
+        padding: 1em;
+      }
+      #error-report header {
+        font-style: bold;
+      }
+      form {
+        margin-top: 2em;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        padding: 2em;
+        border: 1px solid #ccc;
+        background-color: #eee;
+        box-shadow: 5px 5px 20px 1px #00000030;
+      }
+      form input {
+        display: block;
+      }
+      form label {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      form label > span::after {
+        content: ":"
+      }
+      form button[type="submit"] {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 1em;
+        margin: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="try-out-form">
+      <div id="error-report">
+        <header>Sommige velden kunnen beter ingevuld worden:</header>
+        <ul id="error-messages">
+        </ul>
+      </div>
+      <label>
+        <span>voornaam</span>
+        <input name="voornaam" type="text" autofocus/>
+      </label>
+      <label>
+        <span>achternaam</span>
+        <input name="achternaam" type="text"/>
+      </label>
+      <label>
+        <span>postcode</span>
+        <input name="postcode" type="text"/>
+      </label>
+      <label>
+        <span>huisnummer</span>
+        <input name="huisnummer" type="text"/>
+      </label>
+      <button type="submit">Indienen</button>
+    </form>
+  </body>
+  <script src="./formValidation.js" charset="utf-8"></script>
+  <script src="./main.js" charset="utf-8"></script>
+</html>
