@@ -13,7 +13,7 @@
     "compression": "^1.5.2",
     "ejs": "^2.3.3",
     "express": "^4.13.3",
-    "mongodb": "^2.0.42",
+    "mongodb": "",
     "morgan": "^1.6.1",
     "xml": "^1.0.0"
   }
