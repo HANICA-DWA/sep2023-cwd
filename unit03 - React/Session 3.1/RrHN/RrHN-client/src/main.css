@@ -1,0 +1,13 @@
+html {
+  font-size: 12pt;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  background-color: #ff8800;
+  color: white;
+  padding: 15pt;
+}
