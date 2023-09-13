@@ -1,21 +1,22 @@
 # Unit 3: Introduction to React
 
-- [Sessie 3-1: Introduction to React](#sessie-3-1-introduction-to-react)
-  - [Voorbereiding 1: een React project starten](#voorbereiding-1-een-react-project-starten)
-  - [Voorbereiding 2: npm en ES6 modules](#voorbereiding-2-npm-en-es6-modules)
-  - [Voorbereiding 3: Q&A over tools en modules](#voorbereiding-3-qa-over-tools-en-modules)
-  - [Voorbereiding 4: Online tutorial about React](#voorbereiding-4-online-tutorial-about-react)
-  - [Voorbereiding 5: Q&A about the online tutorial](#voorbereiding-5-qa-about-the-online-tutorial)
-  - [Lesplan](#lesplan)
-- [Sessie 3-2: Basics of React](#sessie-3-2-basics-of-react)
-  - [Preparation 1: Review the basics about React using the React docs](#preparation-1-review-the-basics-about-react-using-the-react-docs)
-  - [Preparation 2: Q&A](#preparation-2-qa)
-  - [Preparation 3: Video over Classes en Events](#preparation-3-video-over-classes-en-events)
-  - [Preparation 4: A few more steps in the RrHN Client](#preparation-4-a-few-more-steps-in-the-rrhn-client)
-  - [Lesplan](#lesplan-1)
-- [Sessie 3-3: Small-test](#sessie-3-3-small-test)
-  - [Voorbereiding](#voorbereiding)
-  - [Lesplan](#lesplan-2)
+- [Unit 3: Introduction to React](#unit-3-introduction-to-react)
+  - [Sessie 3-1: Introduction to React](#sessie-3-1-introduction-to-react)
+    - [Voorbereiding 1: een React project starten](#voorbereiding-1-een-react-project-starten)
+    - [Voorbereiding 2: npm en ES6 modules](#voorbereiding-2-npm-en-es6-modules)
+    - [Voorbereiding 3: Q\&A over tools en modules](#voorbereiding-3-qa-over-tools-en-modules)
+    - [Voorbereiding 4: Online tutorial about React](#voorbereiding-4-online-tutorial-about-react)
+    - [Voorbereiding 5: Q\&A about the online tutorial](#voorbereiding-5-qa-about-the-online-tutorial)
+    - [Lesplan](#lesplan)
+  - [Sessie 3-2: Basics of React](#sessie-3-2-basics-of-react)
+    - [Preparation 1: Review the basics about React using the React docs](#preparation-1-review-the-basics-about-react-using-the-react-docs)
+    - [Preparation 2: Q\&A](#preparation-2-qa)
+    - [Preparation 3: Video over Classes en Events](#preparation-3-video-over-classes-en-events)
+    - [Preparation 4: A few more steps in the RrHN Client](#preparation-4-a-few-more-steps-in-the-rrhn-client)
+    - [Lesplan](#lesplan-1)
+  - [Sessie 3-3: Small-test](#sessie-3-3-small-test)
+    - [Voorbereiding](#voorbereiding)
+    - [Lesplan](#lesplan-2)
 
 ## Sessie 3-1: Introduction to React
 
@@ -74,13 +75,16 @@ We will use the official (and rather excellent) [React Documentation](https://re
 
 To review the basics of React which you should already be familiar with, read the following:
 
-- [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
-- [Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
-- [Components and Props](https://reactjs.org/docs/components-and-props.html)
-- [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
-- [Handling Events](https://reactjs.org/docs/handling-events.html)
-- [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
-- [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+- [Your First Component](https://react.dev/learn/your-first-component)
+- [Importing and Exporting Components](https://react.dev/learn/importing-and-exporting-components)
+- [Writing Markup with JSX](https://react.dev/learn/writing-markup-with-jsx)
+- [JS in JSX with Curly Braces](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
+- [Passing Props to Components](https://react.dev/learn/passing-props-to-a-component)
+- [Conditional Rendering](https://react.dev/learn/conditional-rendering)
+- [Rendering Lists](https://react.dev/learn/rendering-lists)
+- [Keep Components Pure](https://react.dev/learn/keeping-components-pure)
+- [Responding to Events](https://react.dev/learn/responding-to-events)
+- [State: A Component's Memory](https://react.dev/learn/state-a-components-memory)
 
 After reading you should know about the way to create and run React applications,
 how to create your own Component, the difference about JSX and HTML, how to use
@@ -119,14 +123,16 @@ Do [steps 4, 5a, 5b, 5c and 5d of the RrHN assignment](https://dwa-courses.fireb
 - The text [An Intro To Using npm and ES6 Modules for Front End Development](https://wesbos.com/javascript-modules/)
 - The video on [Classes and Event Handlers](https://youtu.be/Z1UeeJiK64A)
 - The reading material for session 3-2: from [React Docs](https://reactjs.org/docs), the following articles:
-  - [Create a new React App](https://reactjs.org/docs/create-a-new-react-app.html)
-  - [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
-  - [Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
-  - [Components and Props](https://reactjs.org/docs/components-and-props.html)
-  - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
-  - [Handling Events](https://reactjs.org/docs/handling-events.html)
-  - [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
-  - [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+  - [Your First Component](https://react.dev/learn/your-first-component)
+  - [Importing and Exporting Components](https://react.dev/learn/importing-and-exporting-components)
+  - [Writing Markup with JSX](https://react.dev/learn/writing-markup-with-jsx)
+  - [JS in JSX with Curly Braces](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
+  - [Passing Props to Components](https://react.dev/learn/passing-props-to-a-component)
+  - [Conditional Rendering](https://react.dev/learn/conditional-rendering)
+  - [Rendering Lists](https://react.dev/learn/rendering-lists)
+  - [Keep Components Pure](https://react.dev/learn/keeping-components-pure)
+  - [Responding to Events](https://react.dev/learn/responding-to-events)
+  - [State: A Component's Memory](https://react.dev/learn/state-a-components-memory)
 
 ### Lesplan
 
