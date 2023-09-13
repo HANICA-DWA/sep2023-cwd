@@ -10,7 +10,7 @@ export class RrHNApp extends React.Component {
   render() {
     return (
       <div className="App">
-        <p>Welcome to RRHN</p>
+        <p>Welcome to Henk</p>
         <p>There are {this.state.items.length} HN items.</p>
       </div>
     );
