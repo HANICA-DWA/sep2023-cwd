@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <!-- Like all static assests, '/css/main.css' will be sought in the 'dist' directory -->
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title></title>
+  </head>
+
+  <body>
+    <div id="react-root">
+      <div class="App">
+        <div id="ListPanel">
+          <div class="ItemList">
+            <div class="Logo">
+              <div class="colored">RrHN</div>
+              <div class="title">Hacker News</div>
+            </div>
+
+            <div id="ListMainContent">
+              <div class="Item">
+                <div class="mainInfo">
+                  <div>
+                    <a
+                      class="itemTitle"
+                      href="https://github.com/fatiherikli/language-evolution-simulation"
+                      >Show HN: Language Evolution Simulation</a
+                    >
+                    <span class="domain">(github.com)</span>
+                  </div>
+                  <div class="info">
+                    18 points
+                    <span class="divider">|</span>
+                    by fatiherikli
+                    <span class="divider">|</span>
+                    July 18, 2016
+                    <span class="divider">|</span>
+                    <a
+                      class="comments"
+                      href="https://news.ycombinator.com/item?id=12115187"
+                      ><strong>665</strong> comments</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="Item">
+                <div class="mainInfo">
+                  <div>
+                    <a class="itemTitle" href="https://d4.js.org"
+                      >D4 Declarative Data-Driven Documents</a
+                    >
+                    <span class="domain">(d4.js.org)</span>
+                  </div>
+
+                  <div class="info">
+                    62 points
+                    <span class="divider">|</span>by joelburget
+                    <span class="divider">|</span>
+                    July 18, 2016
+                    <span class="divider">|</span>
+                    <a
+                      class="comments"
+                      href="https://news.ycombinator.com/item?id=12114716"
+                      ><strong>19</strong> comments</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="ListFooter">
+              visual design based on
+              <a
+                href="http://blog.trackduck.com/weekly/top-10-hacker-news-redesigns/unknown-author-2/"
+                >this redesign by unknown author</a
+              >.
+            </div>
+          </div>
+        </div>
+
+        <div id="ItemPanel">
+          <iframe
+            class="IFrameView"
+            src="http://martinfowler.com/articles/serverless.html"
+            frameborder="0"
+            sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- This bundle.js file will be created by Webpack as it combines all the JS modules. -->
+    <!-- It should be created in the 'dist' directory, like this html-file.  -->
+    <script src="bundle.js" type="text/javascript"></script>
+  </body>
+</html>
