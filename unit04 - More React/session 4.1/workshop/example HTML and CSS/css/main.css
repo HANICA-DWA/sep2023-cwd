@@ -1,0 +1,252 @@
+html {
+   font-size: 9pt;
+}
+
+body {
+   margin: 0;
+}
+
+a {
+   color: inherit;
+   text-decoration: inherit;
+}
+
+.App {
+   color: #444;
+   font-family: Georgia;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+#ListPanel {
+   box-sizing: border-box;
+   flex-grow: 1;
+   flex-shrink: 0.5;
+   flex-basis: 30vw;
+   overflow-x: hidden;
+   overflow-y: auto;
+   height: 100vh;
+}
+#ContentPanel {
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 70vw;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   text-align: center;
+   background-color: #f0f0f0;
+}
+#ContentPanel.item iframe {
+   flex-grow: 1;
+}
+#ContentPanel.empty h2 {
+   padding-top: 6rem;
+   font-family: Georgia;
+   font-size: 1.4rem;
+   font-weight:normal;
+   color: #888;
+   margin:0;
+}
+#ContentPanel.empty p {
+   padding-top: 1rem;
+   font-size: 1rem;
+   color: #888;
+   font-style: italic;
+   margin:0;
+}
+
+#ListHeader {
+   padding-left: 1rem;
+}
+.settingsIcon {
+   float:right;
+   margin: 0.7rem 1.2rem;
+   display: inline-block;
+   fill: #bbb;
+   cursor: pointer;
+}
+.settingsIcon:hover {
+   fill: #444;
+}
+.Logo {
+   display: inline-block;
+}
+
+.Logo .colored {
+    display: inline-block;
+    padding: 1rem 0rem;
+    font-family: 'Arial Black';
+    font-size: 0.8rem;
+    letter-spacing: 1pt;
+    width: 4rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.orange .Logo .colored {
+   background-color: #ff8800;
+   color: #fff;
+}
+.green .Logo .colored {
+   background-color: #659f6c;
+   color: #fff;
+}
+.brown .Logo .colored {
+   background-color: #a9916b;
+   color: #fff;
+}
+
+
+.Logo .title {
+    display: inline-block;
+    padding-left: 0.5rem;
+    color: #000;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#ListMainContent {
+    padding: 1rem 1rem;
+}
+
+.mainInfo {
+    display: inline-block;
+    padding: 1.3rem 0 1.3rem 0.5rem;
+    border-bottom: 1px solid #DDD;
+    /* width: 33rem; */
+}
+
+#ListFooter {
+    color: #999;
+    font-size: smaller;
+    padding: 4rem 1rem 1.5rem 2rem;
+}
+#ListFooter a {
+   text-decoration: underline;
+}
+
+.itemTitle {
+    font-size: 1.4rem;
+}
+
+.orange .Item.new .itemTitle {
+   color: #ff8800;
+}
+.green .Item.new .itemTitle {
+   color: #659f6c;
+}
+.brown .Item.new .itemTitle {
+   color: #a9916b;
+}
+.Item.new.selectedItem .itemTitle {
+   color: #ee7700;
+}
+.Item.seen .itemTitle {
+   color: #444;
+}
+.Item.read .itemTitle {
+   color: #999;
+}
+.Item.selectedItem .itemTitle {
+   color: #000;
+}
+
+.orange .Item.selectedItem {
+   background-color: #fff0dd;
+}
+.green .Item.selectedItem {
+   background-color: #c0e7c5;
+}
+.brown .Item.selectedItem {
+   background-color: #e5d6c0;
+}
+
+.Item .domain {
+    color: #999;
+}
+
+.Item .info {
+    color: #999;
+    padding-top: 0.4rem;
+    font-style: italic;
+}
+.Item .comments {
+   color: #888;
+   background-color: #f0f0f0;
+   padding: 0.1rem .5rem;
+   border-radius: .3rem;
+   border: 1px solid #ddd;
+}
+
+.Item .divider {
+    display: inline-block;
+    padding: 0rem 0.4rem;
+    color: #ccc;
+}
+
+button {
+   margin: 0 auto;
+   font-family: Georgia;
+   display: block;
+   padding: 0.5rem 1rem;
+   font-size: 1.1rem;
+   border-radius: 0.5rem;
+   color: black;
+   cursor: pointer;
+   box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.22);
+}
+.orange button  {
+   background-color: #fff0dd;
+   border: 1px solid #ff8800;
+}
+.green button  {
+   background-color: #c0e7c5;
+   border: 1px solid #659f6c;
+}
+.brown button  {
+   background-color: #e5d6c0;
+   border: 1px solid #a9916b;
+}
+
+
+#markAsSeen {
+   padding: 1rem 3rem;
+   margin: 3rem auto;
+}
+
+.PreferencesDialog {
+   justify-content: center;
+   background-color: white;
+   border: 1px solid #ccc;
+   padding: 0rem 3rem 3rem 3rem;
+   margin: auto auto;
+   width: 80%;
+   max-width: 35rem;
+   font-size: 1.1rem;
+   box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.2);
+}
+.PreferencesDialog header {
+   text-align: left;
+   margin-bottom: 3rem;
+}
+
+.PreferencesDialog label {
+   display:block;
+   margin: 2rem 0 0 0;
+   text-align: left;
+}
+.PreferencesDialog .warning {
+   font-size: 0.8rem;
+   text-align: left;
+   padding-top: 0.2rem;
+   font-style: italic;
+}
+.dialogButtons {
+      text-align: center;
+}
+
+.PreferencesDialog button {
+   display:inline-block;
+   margin-left: 1rem;
+}

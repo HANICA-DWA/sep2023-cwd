@@ -1,0 +1,22 @@
+{
+  "name": "rrhn-server",
+  "version": "0.0.2",
+  "description": "A server for the DWA RRHN application.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Holwerda",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "firebase": "^7.0.0",
+    "lodash": "^4.17.15",
+    "mongodb": "^3.1.6",
+    "morgan": "^1.9.1",
+    "nocache": "^2.0.0"
+  }
+}

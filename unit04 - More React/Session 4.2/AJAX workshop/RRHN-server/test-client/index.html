@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test RrHN Server</title>
+    <style>
+      .renderjson a {
+        color: lightblue;
+        text-decoration: none;
+      }
+
+      .renderjson .disclosure {
+        color: #666;
+        font-size: 130%;
+      }
+
+      .renderjson .syntax {
+        color: grey;
+      }
+
+      .renderjson .string {
+        color: red;
+      }
+
+      .renderjson .number {
+        color: cyan;
+      }
+
+      .renderjson .boolean {
+        color: plum;
+      }
+
+      .renderjson .key {
+        color: lightblue;
+      }
+
+      .renderjson .keyword {
+        color: lightgoldenrodyellow;
+      }
+
+      .renderjson .object.syntax {
+        color: lightseagreen;
+      }
+
+      .renderjson .array.syntax {
+        color: lightsalmon;
+      }
+
+      .result:not(:empty) {
+        padding: 1em;
+        background: #000;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      h2 {
+        margin-bottom: 4pt;
+        margin-top: 30pt;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Stories:</h2>
+    <div><button id="stories-button">Load Stories</button></div>
+    <div id="stories-result" class="result"></div>
+
+    <h2>Statuses:</h2>
+    <div>
+      <button id="statuses-button">Load Statuses</button>
+      <button id="set-status-button">Set Random Status</button>
+    </div>
+    <div id="statuses-result" class="result"></div>
+  </body>
+
+  <script src="renderjson/renderjson.js"></script>
+  <script>
+    //setup
+    renderjson.set_show_to_level(2);
+    function $id(id) {
+      return document.getElementById(id);
+    }
+    function showResult(id, result) {
+      $id(id).innerHTML = "";
+      $id(id).appendChild(renderjson(result));
+    }
+    function showSpinner(id) {
+      $id(id).innerHTML = `<img height="40" src="spinner.gif">`;
+    }
+
+    // load stories
+    $id("stories-button").addEventListener("click", doLoadStories);
+    async function doLoadStories(evt) {
+      showSpinner("stories-result");
+      const url = "http://localhost:3000/hn/topstories";
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(
+          `HTTP Request went wrong: got "${response.statusText}" for "${url}"`
+        );
+      }
+      const json = await response.json();
+      showResult("stories-result", json);
+    }
+
+    // load statuses
+    $id("statuses-button").addEventListener("click", doLoadStatuses);
+    async function doLoadStatuses(evt) {
+      showSpinner("statuses-result");
+      const url = "http://localhost:3000/itemStatuses";
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(
+          `HTTP Request went wrong: got "${response.statusText}" for "${url}"`
+        );
+      }
+      const json = await response.json();
+      showResult("statuses-result", json);
+    }
+
+    // set random status
+
+    $id("set-status-button").addEventListener("click", doSetRandomStatus);
+    async function doSetRandomStatus(evt) {
+      showSpinner("statuses-result");
+      const randomId = Math.floor(Math.random() * 9999999) + 10000000;
+      const randomStatus = Math.random() < 0.5 ? "seen" : "read";
+
+      const url = "http://localhost:3000/itemStatuses/" + randomId;
+      const response = await fetch(url, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "text/plain",
+        },
+        body: randomStatus,
+      });
+      if (!response.ok) {
+        throw new Error(
+          `HTTP PUT request went wrong: got "${response.statusText}" for "${url}"`
+        );
+      }
+      // no need to process JSON response.
+      await doLoadStatuses();
+    }
+  </script>
+</html>
