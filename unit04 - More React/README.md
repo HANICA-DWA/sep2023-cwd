@@ -27,6 +27,7 @@ From the series on _Main Concepts_ in the official React documentation, read:
 - [Choosing the State Structure](https://react.dev/learn/choosing-the-state-structure)
 - [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
 - [Thinking In React](https://react.dev/learn/thinking-in-react)
+- [Sharing State Between Components](https://react.dev/learn/sharing-state-between-components)
 
 _Don't forget to think of Q&A questions or discussion items while reading!_
 
@@ -102,6 +103,7 @@ From the React documentation:
 - [Choosing the State Structure](https://react.dev/learn/choosing-the-state-structure)
 - [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
 - [Thinking In React](https://react.dev/learn/thinking-in-react)
+- [Sharing State Between Components](https://react.dev/learn/sharing-state-between-components)
 
 And from the article about fetch with useEffect:
 
