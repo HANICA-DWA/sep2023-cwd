@@ -1,0 +1,12 @@
+img {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  width: 30vw;
+  margin-top: -5.5em;
+}
+
+.Pokemon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

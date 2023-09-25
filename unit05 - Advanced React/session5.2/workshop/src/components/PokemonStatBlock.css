@@ -1,0 +1,15 @@
+h1 {
+  text-transform: capitalize;
+}
+
+table {
+  text-align: right;
+  padding: 1em;
+  border: 1px solid black;
+  float: left;
+}
+
+th {
+  font-weight: 700;
+  border-bottom: 1px solid gray;
+}

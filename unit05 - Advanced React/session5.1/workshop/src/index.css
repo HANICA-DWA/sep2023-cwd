@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: ghostwhite;
+  height: 100%;
+}
+
+a:link,
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited:hover {
+  color: dodgerblue;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+}
+
+nav {
+  background-color: gainsboro;
+  border-bottom: 1px solid darkgray;
+  padding: 20px;
+}
+
+nav a {
+  margin-right: 20px;
+}
+
+.page {
+  height: 100%;
+  padding: 20px;
+}
+
+.page ul {
+  margin-left: 20px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px dotted darkgray;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.content {
+  flex: 1;
+}
+
+.info {
+  margin: 10px 0;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: right;
+  width: 75px;
+}
+
+input, button {
+  padding: 2px 4px;
+  margin: 2px 4px;
+}
