@@ -12,7 +12,6 @@
 - [Defining Routes](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
 - [Pages and Layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts)
 - [Linking and Navigating](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating)
-- [Custom App](https://nextjs.org/docs/pages/building-your-application/routing/custom-app)
 - [Route Groups](https://nextjs.org/docs/app/building-your-application/routing/route-groups)
 - [Dynamic Routes](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes)
 
