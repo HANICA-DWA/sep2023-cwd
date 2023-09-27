@@ -77,7 +77,11 @@ Zorg er nu voor dat wanneer je een "Story"-klikt de URL verandert naar:
 
 `localhost:3000/item/1231324`
 
-Zorg er ook voor dat je met deze URL op dezelfde story uitkomt.
+Zorg er ook voor dat je met deze URL op dezelfde story uitkomt. 
+
+>❗Let op dat je vanuit App of een layout geen data of props kan meegeven.
+> Op het niveau van /item/ kun je dus prima nog een keer de request naar /hn/topstories doen.
+> Als het goed is cached Next.js je requests (zie [Caching Data](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#caching-data)).
 
 ##### 5. Maak een route voor preferences
 
