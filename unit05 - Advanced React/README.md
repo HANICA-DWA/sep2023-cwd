@@ -152,9 +152,10 @@ Gebruik de artikelen die je hebt gelezen voor de sessies om je voor te bereiden 
 - [Route Groups](https://nextjs.org/docs/app/building-your-application/routing/route-groups)
 - [Dynamic Routes](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes)
 
-#### Design Systems:
+#### Design Systems en Component Libraries:
 
 - [Design Systems vs Component Libraries](https://www.uxpin.com/studio/blog/design-systems-vs-pattern-libraries-vs-style-guides-whats-difference/)
+- [Getting Started](https://chakra-ui.com/getting-started/nextjs-guide)
 
 ### Classroom activities
 
