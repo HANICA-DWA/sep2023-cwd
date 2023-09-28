@@ -157,6 +157,10 @@ Gebruik de artikelen die je hebt gelezen voor de sessies om je voor te bereiden 
 - [Design Systems vs Component Libraries](https://www.uxpin.com/studio/blog/design-systems-vs-pattern-libraries-vs-style-guides-whats-difference/)
 - [Getting Started](https://chakra-ui.com/getting-started/nextjs-guide)
 
+#### Context
+
+- [useContext](https://react.dev/reference/react/useContext)
+
 ### Classroom activities
 
 - **The small-test prep:** Your last opportunity to ask questions before the small-test.
