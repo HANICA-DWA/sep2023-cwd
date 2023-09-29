@@ -12,7 +12,6 @@
 - [Defining Routes](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
 - [Pages and Layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts)
 - [Linking and Navigating](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating)
-- [Custom App](https://nextjs.org/docs/pages/building-your-application/routing/custom-app)
 - [Route Groups](https://nextjs.org/docs/app/building-your-application/routing/route-groups)
 - [Dynamic Routes](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes)
 
@@ -78,7 +77,11 @@ Zorg er nu voor dat wanneer je een "Story"-klikt de URL verandert naar:
 
 `localhost:3000/item/1231324`
 
-Zorg er ook voor dat je met deze URL op dezelfde story uitkomt.
+Zorg er ook voor dat je met deze URL op dezelfde story uitkomt. 
+
+>❗Let op dat je vanuit App of een layout geen data of props kan meegeven.
+> Op het niveau van /item/ kun je dus prima nog een keer de request naar /hn/topstories doen.
+> Als het goed is cached Next.js je requests (zie [Caching Data](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#caching-data)).
 
 ##### 5. Maak een route voor preferences
 
@@ -149,9 +152,14 @@ Gebruik de artikelen die je hebt gelezen voor de sessies om je voor te bereiden 
 - [Route Groups](https://nextjs.org/docs/app/building-your-application/routing/route-groups)
 - [Dynamic Routes](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes)
 
-#### Design Systems:
+#### Design Systems en Component Libraries:
 
 - [Design Systems vs Component Libraries](https://www.uxpin.com/studio/blog/design-systems-vs-pattern-libraries-vs-style-guides-whats-difference/)
+- [Getting Started](https://chakra-ui.com/getting-started/nextjs-guide)
+
+#### Context
+
+- [useContext](https://react.dev/reference/react/useContext)
 
 ### Classroom activities
 
