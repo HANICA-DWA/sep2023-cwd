@@ -10,3 +10,4 @@ Main repo for CWD 2023
 - [unit03 - React](./unit03%20-%20React/)
 - [unit04 - More React](./unit04%20-%20More%20React/)
 - [unit05 - Advanced React](./unit05%20-%20Advanced%20React/)
+- [unit06 - Redux 🎉](./unit06%20-%20Redux/)
